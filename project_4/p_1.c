@@ -1,14 +1,17 @@
 #include <stdio.h>
-
 int main(){
-    int a = 41;
-    
-    for (int i = 1; i <= 5; i++) {
-        for (int j = 0; j < i; j++) {
-            printf("%d ", a + j);
-        }
-        printf("\n");
+    int a,f,l,s;
+    printf("ENTER THE TOTAL DIGITS:- ");
+    scanf("%d",&a);
+    l = a %10;
+    f = a;
+    while (f > 10)
+    {
+        f /= 10;
     }
-
+    s = f + l;
+    printf("%d",s);
+    
 }
+
    
