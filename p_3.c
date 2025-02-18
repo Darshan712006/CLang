@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main (){
+int main(){
+
+    int a;
+    for (int i=5; i>0; i--){
+    a = i;
+
     
-    int a, b, thirdAngle;
+        for ( int j = 5; j >= i; j++)
+        {
+            printf("%d",j);
+            a++;
 
-    printf("Enter the first angle : \n");
-    scanf("%d",&a);
-    printf("Enter the second angle : \n");
-    scanf("%d",&b);
+        }
+        printf("\n");
 
-    thirdAngle = 180 - (a+b);
-    printf("Thrid angle is : ");
-    printf("%d",thirdAngle);
+    }
 }
+
+    

@@ -1,11 +1,17 @@
- #include <stdio.h>
-
-int main (){
-    int a = 9/5;
-    int b = 32;
-    int c = 38;
+#include <stdio.h>
+int main(){
+    int a,f,l,s;
+    printf("ENTER THE TOTAL DIGITS:- ");
+    scanf("%d",&a);
+    l = a %10;
+    f = a;
+    while (f > 10)
+    {
+        f /= 10;
+    }
+    s = f + l;
+    printf("%d",s);
     
-    int x = ( a * c ) + b;
-    printf(" the F = %d",x);
 }
 
+   
